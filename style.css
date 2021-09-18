@@ -1,0 +1,147 @@
+:root{
+    --background-color:rgb(240,242,245); 
+    --se-connecter-background-color:rgb(24,119,242);
+    --creer-un-compte-background-color:rgb(66,183,42);
+    --se-connecter-background-color-hover:rgb(22,111,229);
+    --creer-un-compte-color-hover:rgb(54,164,32);
+    --color-placeholder:rgb(144,148,156);
+    --color-placeholder-focus:rgb(190,199,215);
+}
+body,html{
+    margin: 0;
+    padding:0;
+    background-color: var(--background-color);
+}
+.main-page{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color) ;
+    position: absolute;
+}
+.main-content{
+    display: flex;
+    position:absolute;
+    top: 23%;
+    height: 100vh;
+    left: 18%;
+}
+.left-content{
+    margin-right: 10%;
+    width: 500px;
+}
+.facebook-logo{
+    width: 300px;
+    
+}
+.facebook-logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.left-content label{
+    text-align: left;
+    font-size: 1.75em;
+    font-family: sans-serif;
+}
+.log-in-content{
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 1px 20px 0 gray;
+}
+
+/* make sure now to edit the login content (width and height etc).. */
+.email-input,.password-input{
+    width:100% ;
+}
+.email-input input,.password-input input{
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--color-placeholder);
+    padding: 15px ;
+    caret-color: var(--se-connecter-background-color);
+    
+}
+.email-input input::placeholder,.password-input input::placeholder{
+    font-size: 1.2em;
+    color: var(--color-placeholder);
+}
+.email-input input:focus,.password-input input:focus{
+    outline: none;
+    border: 1px solid var(--se-connecter-background-color);
+}
+.email-input input:focus::placeholder,.password-input input:focus::placeholder{
+    color: var(--color-placeholder-focus);
+}
+.se-connecter-button button{
+    font-size: 1.4em;
+    margin: 10px 0;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: var(--se-connecter-background-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+.se-connecter-button button:hover{
+    transition: 0.4s;
+    background-color: var(--se-connecter-background-color-hover);
+}
+.mot-de-passe-oublie{
+    width: 100%;
+    border-bottom: 1px solid var(--color-placeholder-focus);
+    padding-bottom: 15px;
+    
+
+}
+
+.mot-de-passe-oublie a{
+    font-size: 0.9em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--se-connecter-background-color);
+
+}
+.creer-un-compte-button button{
+    margin-top: 7%;
+    margin-bottom: 3%;
+    box-shadow: ;
+    width: fit-content;
+    font-size: 1.1em;
+    padding: 13px 15px;
+    border-radius: 7px;
+    color: white;
+    font-family: sans-serif;
+    background-color: var(--creer-un-compte-background-color);
+    border: none;
+    cursor: pointer;
+}
+.creer-un-compte-button button:hover{
+    transition: 0.5s;
+    background-color: var(--creer-un-compte-color-hover);
+}
+.description{
+    text-align: center;
+    margin-top: 6%;
+    padding-left: 35px;
+    
+}
+.description label{
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
